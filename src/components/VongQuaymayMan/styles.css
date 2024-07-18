@@ -1,0 +1,121 @@
+.wheel__loots {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 631px;
+  height: 632px;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  z-index: 10;
+  border-radius: 50%;
+  background: url("../../../public/bg-wheel.png") 0 0/100% 100% no-repeat;
+}
+
+.home .spin .wheel {
+  width: 633px;
+  height: 760px;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* top: 240px;
+  left: 261px; */
+  background: url("../../../public/bg-spin.png") 0 0 / 100% 100% no-repeat;
+}
+
+.spin {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding-top: 22px;
+  z-index: 10;
+}
+
+.home .spin .wheel__loots li {
+  width: 165px;
+  height: 245px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 82.5px);
+  transform-origin: center bottom;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 70px;
+}
+
+.home .spin .wheel__loots li img {
+  width: 70px;
+}
+
+.home .spin .wheel__btn {
+  width: 190px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 218px;
+  left: 222px;
+  z-index: 20;
+  font-size: 44.27px;
+  font-weight: 700;
+  color: #fff !important;
+  padding-top: 10px;
+  background: transparent;
+  border: none;
+}
+
+.home .spin .wheel:before {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 76px;
+  z-index: 30;
+  position: absolute;
+  top: 8px;
+  left: calc(50% - 21.5px);
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+  background: url("../../../public/spin-cursor.png") 0 0 / 100% 100% no-repeat;
+}
+
+.result {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.conntent {
+  background: #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home .spin .wheel__turn {
+  width: 244px;
+  height: 52px;
+  position: absolute;
+  left: 197px;
+  top: 653px;
+  color: #fff;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32.62px;
+  font-family: UTM Bebas, sans-serif;
+  text-align: center;
+  padding-bottom: 5px;
+}
